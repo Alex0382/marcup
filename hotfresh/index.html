@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hot&Fresh</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+	<header class="wrap">
+		<img src="img/header_pizza.jpg" alt="pizza">
+		<div class="head">
+			<div class="top cliarfix">
+				<div class="logo">
+					<a href="index.html"><img src="img/logo.png" alt="Logo"></a> 
+				</div>
+				<div class="info">
+					<a href="https://vk.com/" target="_blank"><img src="img/wk.png" alt="VK"></a>
+					<a href="https://facebook.com/" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
+					<a href="https://twitter.com/" target="_blank" class="cliarfix"><img src="img/twitter.png" alt="Twitter"></a>
+					<form action="search.php" class="search_form">
+						<input type="search" name="search" placeholder="Поиск">
+						<input type="submit" value="">
+					</form>
+				</div>	
+			</div>
+			<div class="sandwich">
+				<img src="img/sandwich.png" alt="sandwich">
+			</div>
+			<nav class="menu">
+				<div class="close">
+					<img src="img/close.png" alt="close">
+				</div>
+			 	<ul>
+    				<li><a href="#">Главная</a></li>
+            		<li><a href="#Action">Акции</a></li>
+            		<li><a href="#Menu">Меню</a></li>
+            		<li><a href="#Gallery">Галлерея</a></li>
+            		<li><a href="#Reviews">Отзывы</a></li>
+            		<li><a href="#Contacts">Контакты</a></li>
+    			</ul>
+			</nav>
+			<div class="text_logo">
+				<h1>Hot </h1><span class="small">&</span><h1>Fresh </h1> 
+				<h2>Italian Pizza</h2>
+			</div>
+	    </div>
+	</header>
+	<section class="wrap">
+		<img src="img/order.jpg" alt="order">
+		<div class="order content_wrap" id="Action">
+			<div class="green">
+				<div class="green_top"></div>
+				<div class="green_bottom">
+					<span>При заказе 2-ух пицц, третью получите в подарок</span>
+				</div>
+			</div>
+			<div class="white">
+				<div class="white_top"></div>
+				<div class="white_bottom">
+					<span>Бесплатная доставка на самую вкусную пиццу в городе</span>
+				</div>
+			</div>
+			<div class="red">
+				<div class="red_top"></div>
+				<div class="red_bottom">
+					<span>В будние дни до 16-00 скидка на любую пиццу 10%</span>
+				</div>
+			</div>
+			<div class="order_text">
+				<div class="order_text_top">
+					<h5>Hot & Fresh Italian Pizza - <br>
+					это возмоность побывать в Италии, 
+					не покидая своей страны!</h5>
+				</div>
+				<hr>
+				<div class="order_text_bottom">
+					<h5>Самые вкусные рецепты, самые лучшие повора и самые свежие ингредиенты!
+					</h5>
+				</div>
+			</div>
+				<span class="call">Заказать обратный звонок</span>
+			<div class="order_form">
+				<div class="close" id="close">
+					<img src="img/close.png" alt="close">
+				</div>
+				<form action="contact.php" name="contact" class="contact">
+					<input type="text" name="name" placeholder="Ваше имя">
+        		    <input type="tel" name="tel" placeholder="Номер телефона">
+					<input type="submit" value="Заказать">
+				</form>
+			</div>
+		</div>
+	</section>
+	<section class="wrap" id="Menu">
+		<img src="img/menu.png" alt="menu" class="menu_img">
+		<div class="basket">
+			<div class="close_basket">
+				<img src="img/close.png" alt="close">
+			</div>
+			<span class="basket_name"></span>
+			<form class="basket_form">
+				<input type="text" name="name" placeholder="Ваше имя">
+        		<input type="tel" name="tel" placeholder="Номер телефона">
+        		<span class="basket_text">Выберите колличество</span>
+				<select class="amount">
+					<option>0</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+				</select>
+			</form>
+			<span class="count_basket">Подсчитать сумму заказа</span>
+			<div class="count_text">Общая стоимость заказа:</div>
+			<div class="count_num">0 грн.</div>
+			<span class="send_order">Отправить заказ</span>
+		</div>
+		<div class="menu_big" name="menu_big">
+			<div class="box">
+				<img src="img/menu1.jpg" alt="menu1" class="menu_m">
+				<div class="white_block_m">
+					<div class="block_big_m">
+						<span class="piz_name_m">Цезарь</span>
+						<hr>
+						<span class="ingredients_m">Курица, соус Цезарь, помидоры, салат, моцарелла</span>
+						<span class="price_m">100 грн</span>
+						<a href="#" class="ord_m">Заказать</a>
+					</div>
+				</div>
+			</div>
+			<div class="box">
+				<img src="img/menu2.jpg" alt="menu2" class="menu_m">
+				<div class="white_block_m">
+					<div class="block_big_m">
+						<span class="piz_name_m">Маргарита</span>
+						<hr>
+						<span class="ingredients_m">Помидоры, моцарелла,<br>базилик</span>
+						<span class="price_m">70 грн</span>
+						<a href="#" class="ord_m">Заказать</a>
+					</div>
+				</div>
+			</div>
+			<div class="box">
+				<img src="img/menu3.jpg" alt="menu3" class="menu_m">
+				<div class="white_block_m">
+					<div class="block_big_m">
+						<span class="piz_name_m">Гавайская</span>
+						<hr>
+						<span class="ingredients_m">Курица, шампиньоны, моцарелла, ананас</span>
+						<span class="price_m">85 грн</span>
+						<a href="#" class="ord_m">Заказать</a>
+					</div>
+				</div>
+			</div>
+			<div class="box">
+				<img src="img/menu1.jpg" alt="menu1" class="menu_m">
+				<div class="white_block_m">
+					<div class="block_big_m">
+						<span class="piz_name_m">Цезарь</span>
+						<hr>
+						<span class="ingredients_m">Курица, соус Цезарь, помидоры, салат, моцарелла</span>
+						<span class="price_m">100 грн</span>
+						<a href="#" class="ord_m">Заказать</a>
+					</div>
+				</div>
+			</div>
+			<div class="box">
+				<img src="img/menu2.jpg" alt="menu2" class="menu_m">
+				<div class="white_block_m">
+					<div class="block_big_m">
+						<span class="piz_name_m">Маргарита</span>
+						<hr>
+						<span class="ingredients_m">Помидоры, моцарелла,<br>базилик</span>
+						<span class="price_m">70 грн</span>
+						<a href="#" class="ord_m">Заказать</a>
+					</div>
+				</div>
+			</div>
+			<div class="box">
+				<img src="img/menu3.jpg" alt="menu3" class="menu_m">
+				<div class="white_block_m">
+					<div class="block_big_m">
+						<span class="piz_name_m">Гавайская</span>
+						<hr>
+						<span class="ingredients_m">Курица, шампиньоны, моцарелла, ананас</span>
+						<span class="price_m">85 грн</span>
+						<a href="#" class="ord_m">Заказать</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="carte content_wrap">
+			<h3>Меню</h3>
+			<hr>
+			<p>Чаще всего заказывают</p>
+			<hr>
+			<div class="carte_1">
+				<img src="img/menu1.jpg" alt="menu1" class="car_img">
+				<div class="white_block">
+					<div class="block_big">
+						<span class="piz_name">Цезарь</span>
+						<hr>
+						<span class="ingredients">Курица, соус Цезарь, помидоры, салат, моцарелла</span>
+						<span class="price">100 грн</span>
+						<span class="ord">Заказать</span>
+					</div>
+				</div>
+			</div>
+			<div class="carte_2">
+				<img src="img/menu2.jpg" alt="menu2" class="car_img">
+				<div class="white_block">
+					<div class="block_big">
+						<span class="piz_name">Маргарита</span>
+						<hr>
+						<span class="ingredients">Помидоры, моцарелла,<br>базилик</span>
+						<span class="price">70 грн</span>
+						<span class="ord">Заказать</span>
+					</div>
+				</div>
+			</div>
+			<div class="carte_3 cliarfix">
+				<img src="img/menu3.jpg" alt="menu3" class="car_img">
+				<div class="white_block">
+					<div class="block_big">
+						<span class="piz_name">Гавайская</span>
+						<hr>
+						<span class="ingredients">Курица, шампиньоны, моцарелла, ананас</span>
+						<span class="price">85 грн</span>
+						<span class="ord">Заказать</span>
+					</div>
+				</div>
+			</div>
+			<div class="carousel" id="carousel">
+				<div class="arrow prev">
+					<img src="img/arrow-left.png" alt="arrow" class="arr_img">
+				</div>
+				<div class="carousel_gallery">
+					<ul class="images">
+						<li>
+							<div class="carte_mob">
+								<img src="img/menu1.jpg" alt="menu1" class="car_img">
+								<div class="white_block">
+									<div class="block_big">
+										<span class="piz_name">Цезарь</span>
+										<hr>
+										<span class="ingredients">Курица, соус Цезарь, помидоры, салат, моцарелла</span>
+										<span class="price">100 грн</span>
+										<a href="#" class="ord">Заказать</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="carte_mob">
+								<img src="img/menu2.jpg" alt="menu2" class="car_img">
+								<div class="white_block">
+									<div class="block_big">
+										<span class="piz_name">Маргарита</span>
+										<hr>
+										<span class="ingredients">Помидоры, моцарелла,<br>базилик</span>
+										<span class="price">70 грн</span>
+										<a href="#" class="ord">Заказать</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="carte_mob cliarfix">
+								<img src="img/menu3.jpg" alt="menu3" class="car_img">
+								<div class="white_block">
+									<div class="block_big">
+										<span class="piz_name">Гавайская</span>
+										<hr>
+										<span class="ingredients">Курица, шампиньоны, моцарелла, ананас</span>
+										<span class="price">85 грн</span>
+										<a href="#" class="ord">Заказать</a>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="arrow next">
+					<img src="img/arrow-right.png" alt="arrow ">
+				</div>
+			</div>
+			<span class="all_menu">Все меню</span>
+		</div>
+	</section>
+	<section class="wrap" id="Gallery">
+		<img src="img/gallery.jpg" alt="gallery" class="block_3">
+		<div class="big_img">
+				<div class="close" id="close_gall">
+					<img src="img/close.png" alt="close">
+			    </div>
+				<img src="img/gallery_1.jpg" alt="gallery_1" class="biggest">
+			</div>
+		<div class="gallery content_wrap">
+			<div class="color_text">
+				<span class="green_text">Hot</span><span class="little">&</span>
+				<span class="red_text">Fresh </span>
+				<h2>Italian Pizza</h2>
+			</div>
+			<div class="line">
+				<a href="img/gallery_2.jpg"><img src="img/gallery_2.jpg" alt="gallery_2"></a>
+				<a href="img/gallery_1.jpg"><img src="img/gallery_1.jpg" alt="gallery_1"></a>
+			</div>
+			<div class="line">
+				<a href="img/gallery_4.jpg"><img src="img/gallery_4.jpg" alt="gallery_4"></a>
+				<a href="img/gallery_3.jpg"><img src="img/gallery_3.jpg" alt="gallery_3"></a>
+			</div>
+			<div class="line">
+				<a href="img/gallery_5.jpg"><img src="img/gallery_5.jpg" alt="gallery_5"></a>
+				<span class="img_text">Подними себе настроение нашей пиццей</span>
+				<a href="img/gallery_6.jpg"><img src="img/gallery_6.jpg" alt="gallery_6"></a>
+			</div>
+			<div class="line">
+				<a href="img/gallery_7.jpg"><img src="img/gallery_7.jpg" alt="gallery_7"></a>
+				<a href="img/gallery_8.jpg"><img src="img/gallery_8.jpg" alt="gallery_8"></a>
+				<a href="img/gallery_9.jpg"><img src="img/gallery_9.jpg" alt="gallery_9"></a>
+				<a href="img/gallery_10.jpg"><img src="img/gallery_10.jpg" alt="gallery_10"></a>
+			</div>
+			<div class="line">
+				<a href="img/gallery_11.jpg"><img src="img/gallery_11.jpg" alt="gallery_11"></a>
+				<a href="img/gallery_12.jpg"><img src="img/gallery_12.jpg" alt="gallery_12"></a>
+				<span class="img_text">Мы дарим<br> Вам <br>тепло</span>
+				<a href="img/gallery_13.jpg"><img src="img/gallery_13.jpg" alt="gallery_13"></a>
+			</div>
+			<div class="line">
+				<a href="img/gallery_14.jpg"><img src="img/gallery_14.jpg" alt="gallery_14"></a>
+				<a href="img/gallery_15.jpg"><img src="img/gallery_15.jpg" alt="gallery_15"></a>
+				<a href="img/gallery_16.jpg"><img src="img/gallery_16.jpg" alt="gallery_16"></a>
+				<a href="img/gallery_17.jpg"><img src="img/gallery_17.jpg" alt="gallery_17"></a>
+			</div>
+			<div class="line">
+				<a href="img/gallery_18.jpg"><img src="img/gallery_18.jpg" alt="gallery_18"></a>
+				<a href="img/gallery_19.jpg"><img src="img/gallery_19.jpg" alt="gallery_19"></a>
+				<a href="img/gallery_20.jpg"><img src="img/gallery_20.jpg" alt="gallery_20"></a>
+				<a href="img/gallery_21.jpg"><img src="img/gallery_21.jpg" alt="gallery_21"></a>
+			</div>
+			<div class="carousel_img" id="carousel_img">
+				<div class="arrow_img prev_gall">
+					<img src="img/arrow-left.png" alt="arrow" class="arr_img">
+				</div>
+				<div class="carousel_line">
+					<ul class="images">
+						<li>
+							<img src="img/gallery_1.jpg" alt="gallery_1">
+						</li>
+						<li>
+							<img src="img/gallery_2.jpg" alt="gallery_2">
+						</li>
+						<li>
+							<img src="img/gallery_3.jpg" alt="gallery_3">
+						</li>
+						<li>
+							<img src="img/gallery_4.jpg" alt="gallery_4">
+						</li>
+						<li>
+							<img src="img/gallery_5.jpg" alt="gallery_5">
+						</li>
+						<li>
+							<img src="img/gallery_6.jpg" alt="gallery_6">
+						</li>
+						<li>
+							<img src="img/gallery_7.jpg" alt="gallery_7">
+						</li>
+						<li>
+							<img src="img/gallery_8.jpg" alt="gallery_8">
+						</li>
+						<li>
+							<img src="img/gallery_9.jpg" alt="gallery_9">
+						</li>
+						<li>
+							<img src="img/gallery_10.jpg" alt="gallery_10">
+						</li>
+						<li>
+							<img src="img/gallery_11.jpg" alt="gallery_11">
+						</li>
+						<li>
+							<img src="img/gallery_12.jpg" alt="gallery_12">
+						</li>
+						<li>
+							<img src="img/gallery_13.jpg" alt="gallery_13">
+						</li>
+						<li>
+							<img src="img/gallery_14.jpg" alt="gallery_14">
+						</li>
+						<li>
+							<img src="img/gallery_15.jpg" alt="gallery_15">
+						</li>
+						<li>
+							<img src="img/gallery_16.jpg" alt="gallery_16">
+						</li>
+						<li>
+							<img src="img/gallery_17.jpg" alt="gallery_17">
+						</li>
+						<li>
+							<img src="img/gallery_18.jpg" alt="gallery_18">
+						</li>
+						<li>
+							<img src="img/gallery_19.jpg" alt="gallery_19">
+						</li>
+						<li>
+							<img src="img/gallery_20.jpg" alt="gallery_20">
+						</li>
+						<li>
+							<img src="img/gallery_21.jpg" alt="gallery_21">
+						</li>
+					</ul>
+				</div>
+				<div class="arrow_img next_gall">
+					<img src="img/arrow-right.png" alt="arrow ">
+				</div>
+			</div>
+			<span  class="text_left">Подними себе настроение нашей пиццей</span>
+			<span class="text_right">Мы дарим<br> Вам <br>тепло</span>
+		</div>
+	</section>
+	<section class="wrap" id="Reviews">
+		<div class="big_map">
+			<div class="close" id="close_map">
+					<img src="img/close.png" alt="close">
+			    </div>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.9891456525543!2d36.20621941517442!3d50.06776492274667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a43b66d5add3%3A0xab14113051f0391c!2z0L_RgNC-0YHQvy4g0J_QvtCx0LXQtNGLLCA3NSwg0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDYxMDAw!5e0!3m2!1sru!2sua!4v1530621382463" class="google"></iframe>
+		</div>
+		<img src="img/reviews.jpg" alt="reviews" class="foot_img">
+		<div class="reviews content_wrap">
+			<div class="rev_top">
+				<hr>
+				<h3>Отзывы</h3>
+				<hr>
+			</div>
+			<div class="review">
+				<div class="rev_1">
+					<div class="foto">
+						<img src="img/foto_1.jpg" alt="foto_1">
+					</div>
+					<div class="rev_text">
+						<p class="name">Артур</p>
+						<p class="rev">Если хотите провести отличный вечер и вкусно поесть 
+                              приходите обязателнльно в Hot&Fresh. Самая вкусная 
+                              пицца в городе, приятная атмосфера.
+                        </p>
+                        <div class="star">
+                        	<img src="img/star_red.png" alt="star">
+                        	<img src="img/star_red.png" alt="star">
+                        	<img src="img/star_red.png" alt="star">
+                        	<img src="img/star_red.png" alt="star">
+                        	<img src="img/star_red.png" alt="star">
+                        </div>
+					</div>
+				</div>
+                <div class="rev_2">
+					<div class="foto">
+						<img src="img/foto_2.jpg" alt="foto_1">
+					</div>
+					<div class="rev_text">
+						<p class="name">Анна</p>
+						<p class="rev">Очень вкусная пицца, приятная атмосфера, но мало 
+                         оффициантов на такое колличество посетителей
+                        </p>
+                        <div class="star">
+                        	<img src="img/star_white.png" alt="star">
+                        	<img src="img/star_red.png" alt="star">
+                        	<img src="img/star_red.png" alt="star">
+                        	<img src="img/star_red.png" alt="star">
+                        	<img src="img/star_red.png" alt="star">
+                        </div>
+					</div>
+				</div>
+				<span class="all_rev">Посмотреть остальные отзывы</span>
+			</div>
+			<div class="all_review" name="all_review">
+				
+				<div class="rev_1">
+					<div class="foto">
+						<img src="img/foto_1.jpg" alt="foto_1">
+					</div>
+					<div class="rev_text">
+						<p class="name">Артур</p>
+						<p class="rev">Если хотите провести отличный вечер и вкусно поесть 
+                              приходите обязателнльно в Hot&Fresh. Самая вкусная 
+                              пицца в городе, приятная атмосфера.
+                        </p>
+                        <div class="star">
+                        	<img src="img/star_red.png" alt="star">
+                        	<img src="img/star_red.png" alt="star">
+                        	<img src="img/star_red.png" alt="star">
+                        	<img src="img/star_red.png" alt="star">
+                        	<img src="img/star_red.png" alt="star">
+                        </div>
+					</div>
+				</div>
+                <div class="rev_2">
+					<div class="foto">
+						<img src="img/foto_2.jpg" alt="foto_1">
+					</div>
+					<div class="rev_text">
+						<p class="name">Анна</p>
+						<p class="rev">Очень вкусная пицца, приятная атмосфера, но мало 
+                         оффициантов на такое колличество посетителей
+                        </p>
+                        <div class="star">
+                        	<img src="img/star_white.png" alt="star">
+                        	<img src="img/star_red.png" alt="star">
+                        	<img src="img/star_red.png" alt="star">
+                        	<img src="img/star_red.png" alt="star">
+                        	<img src="img/star_red.png" alt="star">
+                        </div>
+					</div>
+				</div>
+				<div class="rev_1">
+					<div class="foto">
+						<img src="img/foto_1.jpg" alt="foto_1">
+					</div>
+					<div class="rev_text">
+						<p class="name">Артур</p>
+						<p class="rev">Если хотите провести отличный вечер и вкусно поесть 
+                              приходите обязателнльно в Hot&Fresh. Самая вкусная 
+                              пицца в городе, приятная атмосфера.
+                        </p>
+                        <div class="star">
+                        	<img src="img/star_red.png" alt="star">
+                        	<img src="img/star_red.png" alt="star">
+                        	<img src="img/star_red.png" alt="star">
+                        	<img src="img/star_red.png" alt="star">
+                        	<img src="img/star_red.png" alt="star">
+                        </div>
+					</div>
+				</div>
+                <div class="rev_2">
+					<div class="foto">
+						<img src="img/foto_2.jpg" alt="foto_1">
+					</div>
+					<div class="rev_text">
+						<p class="name">Анна</p>
+						<p class="rev">Очень вкусная пицца, приятная атмосфера, но мало 
+                         оффициантов на такое колличество посетителей
+                        </p>
+                        <div class="star">
+                        	<img src="img/star_white.png" alt="star">
+                        	<img src="img/star_red.png" alt="star">
+                        	<img src="img/star_red.png" alt="star">
+                        	<img src="img/star_red.png" alt="star">
+                        	<img src="img/star_red.png" alt="star">
+                        </div>
+					</div>
+				</div>
+			</div>
+			<div class="review_m" id="review_m">
+				<div class="arrow prev">
+					<img src="img/arrow-left.png" alt="arrow" class="arr_img">
+				</div>
+				<div class="carousel_m">
+					<ul>
+						<li>
+							<div class="foto">
+								<img src="img/foto_1.jpg" alt="foto_1">
+							</div>
+							<div class="rev_text">
+								<p class="name">Артур</p>
+								<p class="rev">Если хотите провести отличный вечер и вкусно поесть 
+                                приходите обязателнльно в Hot&Fresh. Самая вкусная 
+                                пицца в городе, приятная атмосфера.
+                                </p>
+		                        <div class="star">
+		                        	<img src="img/star_red.png" alt="star">
+		                        	<img src="img/star_red.png" alt="star">
+		                        	<img src="img/star_red.png" alt="star">
+		                        	<img src="img/star_red.png" alt="star">
+		                        	<img src="img/star_red.png" alt="star">
+		                        </div>
+		                    </div>
+						</li>
+						<li>
+							<div class="foto">
+						    	<img src="img/foto_2.jpg" alt="foto_1">
+					        </div>
+							<div class="rev_text">
+								<p class="name">Анна</p>
+								<p class="rev">Очень вкусная пицца, приятная атмосфера, но мало 
+                        		оффициантов на такое колличество посетителей
+                        		</p>
+		                        <div class="star">
+		                        	<img src="img/star_white.png" alt="star">
+		                        	<img src="img/star_red.png" alt="star">
+		                        	<img src="img/star_red.png" alt="star">
+		                        	<img src="img/star_red.png" alt="star">
+		                        	<img src="img/star_red.png" alt="star">
+		                        </div>
+							</div>
+						</li>
+						<li>
+							<div class="foto">
+								<img src="img/foto_1.jpg" alt="foto_1">
+							</div>
+							<div class="rev_text">
+								<p class="name">Артур</p>
+								<p class="rev">Если хотите провести отличный вечер и вкусно поесть 
+                                приходите обязателнльно в Hot&Fresh. Самая вкусная 
+                                пицца в городе, приятная атмосфера.
+                                </p>
+		                        <div class="star">
+		                        	<img src="img/star_red.png" alt="star">
+		                        	<img src="img/star_red.png" alt="star">
+		                        	<img src="img/star_red.png" alt="star">
+		                        	<img src="img/star_red.png" alt="star">
+		                        	<img src="img/star_red.png" alt="star">
+		                        </div>
+		                    </div>
+						</li>
+						<li>
+							<div class="foto">
+						    	<img src="img/foto_2.jpg" alt="foto_1">
+					        </div>
+							<div class="rev_text">
+								<p class="name">Анна</p>
+								<p class="rev">Очень вкусная пицца, приятная атмосфера, но мало 
+                        		оффициантов на такое колличество посетителей
+                        		</p>
+		                        <div class="star">
+		                        	<img src="img/star_white.png" alt="star">
+		                        	<img src="img/star_red.png" alt="star">
+		                        	<img src="img/star_red.png" alt="star">
+		                        	<img src="img/star_red.png" alt="star">
+		                        	<img src="img/star_red.png" alt="star">
+		                        </div>
+							</div>
+						</li>
+						<li>
+							<div class="foto">
+								<img src="img/foto_1.jpg" alt="foto_1">
+							</div>
+							<div class="rev_text">
+								<p class="name">Артур</p>
+								<p class="rev">Если хотите провести отличный вечер и вкусно поесть 
+                                приходите обязателнльно в Hot&Fresh. Самая вкусная 
+                                пицца в городе, приятная атмосфера.
+                                </p>
+		                        <div class="star">
+		                        	<img src="img/star_red.png" alt="star">
+		                        	<img src="img/star_red.png" alt="star">
+		                        	<img src="img/star_red.png" alt="star">
+		                        	<img src="img/star_red.png" alt="star">
+		                        	<img src="img/star_red.png" alt="star">
+		                        </div>
+		                    </div>
+						</li>
+					</ul>
+				</div>
+				<div class="arrow next">
+					<img src="img/arrow-right.png" alt="arrow ">
+				</div>
+			</div>
+			<span class="give_feet_m">Оставить отзыв</span>
+			<div class="feedback">
+				<span class="give_feetback">Оставить отзыв</span>
+				<form action="contact.php" name="contact" class="contact_2">
+					<input type="text" name="name" placeholder="Ваше имя">
+					<input type="email" name="email" placeholder="Aдресс почты">
+					<textarea class="feed_text" placeholder="Ваш отзыв"></textarea>
+				</form>
+				<span class="rating">Ваша оценка</span>
+				<img src="img/star_big_white.png" alt="star">
+				<img src="img/star_big_white.png" alt="star">
+				<img src="img/star_big_red.png" alt="star">
+				<img src="img/star_big_red.png" alt="star">
+				<img src="img/star_big_red.png" alt="star">
+			</div>	
+			<div class="feedback_mob">
+				<div class="close" id="close_rev">
+					<img src="img/close.png" alt="close">
+			    </div>
+				<span class="give_feetback">Оставить отзыв</span>
+				<form action="contact.php" name="contact" class="contact_2">
+					<input type="text" name="name" placeholder="Ваше имя">
+					<input type="email" name="email" placeholder="Aдресс почты">
+					<textarea class="feed_text" placeholder="Ваш отзыв"></textarea>
+				</form>
+				<span class="rating">Ваша оценка</span>
+				<img src="img/star_big_white.png" alt="star" class="feed_star">
+				<img src="img/star_big_white.png" alt="star" class="feed_star">
+				<img src="img/star_big_red.png" alt="star" class="feed_star">
+				<img src="img/star_big_red.png" alt="star" class="feed_star">
+				<img src="img/star_big_red.png" alt="star" class="feed_star">
+			</div>	
+		</div>
+		<footer id="Contacts">
+    	<div class="green_line"></div>
+    	<div class="foot">
+    		<div class="cell">
+    			<span class="cont">Контакты</span>
+    			<div class="cliarfix">
+    				<span class="left">Номер телефона</span>
+    				<a href="0938132456" class="right">0938132456</a>
+    			</div>
+    			<div class="cliarfix">
+    				<a href="0507689876" class="right">0507689876</a>
+    			</div>
+    			<div class="cliarfix">
+    				<span class="left">Почта</span>
+    				<a href="Hot&Fresh@rmail.com" class="right">Hot&Fresh@rmail.com</a>
+    			</div>
+    			<div class="cliarfix time">
+    				<span class="left">Время работы</span>
+    				<span class="right_non">eжедневно с 8-00 до 23-00</span>
+    				<span class="left">Доставка</span>
+    				<span class="right_non">eжедневно с 10-00 до 22-00</span>
+    			</div>
+    		</div>
+			<div class="vertical vertical_1"></div>
+    		<nav class="nuv ">
+    			<ul>
+    				<li><a href="#">Главная</a></li>
+            		<li><a href="#Action">Акции</a></li>
+            		<li><a href="#Menu">Меню</a></li>
+            		<li><a href="#Gallery">Галлерея</a></li>
+            		<li><a href="#Reviews">Отзывы</a></li>
+    			</ul>
+    		</nav>
+    		<div class="vertical"></div>
+    		<div class="cell_2">
+    			<span class="join">Присоединяйтесь к нам</span>
+    			<a href="https://vk.com/" target="_blank"><img src="img/wk.png" alt="VK"></a>
+				<a href="https://facebook.com/" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
+				<a href="https://twitter.com/" target="_blank"><img src="img/twitter.png" alt="Twitter"></a>
+				<a href="https://www.apple.com/ru/itunes/charts/free-apps/" target="_blank" class="app">App Store</a>
+				<a href="index.html" target="_blank" class="hf">Hot&Fresh</a>
+    		</div>
+    		<div class="vertical"></div>
+    		<div class="cell_3">
+    			<span class="adress">Адресс</span>
+    			<p>пр. Победы, 75 <span class="map">(Посмотреть на карте)</span></p>
+    			<img src="img/map.jpg" alt="map" class="map_img">
+    		</div>
+    	</div>
+    	<div class="red_line"></div>
+	</footer>
+	</section>
+	<script src="js/menu.js" defer></script>
+	<script src="js/call.js" defer></script>
+	<script src="js/carte.js" defer></script>
+	<script src="js/gallery.js" defer></script>
+	<script src="js/review.js" defer></script>
+	<script src="js/map.js" defer></script>
+	<script src="js/basket.js" defer></script>
+</body>
+</html>
